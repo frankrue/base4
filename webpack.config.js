@@ -9,8 +9,11 @@ var webpack = require('webpack'),
 var config = {
   context: APP,
   devServer: {
-    port: 3000
+    port: 3000,
+    devtool: true,
+    debug: true
   },
+  devtool: 'source-map',
   entry: {
     app: ['./coffee/app.coffee'],
     vendor: [
